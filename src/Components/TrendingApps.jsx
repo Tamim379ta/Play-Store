@@ -1,6 +1,7 @@
 import React, { use } from 'react';
 import { HiH1 } from 'react-icons/hi2';
 import AppsCard from './AppsCard';
+import { Link } from 'react-router';
 
 const appPromise = fetch('/data.json').then(res => res.json())
 
@@ -11,14 +12,18 @@ const TrendingApps = () => {
       <h1 className='text-4xl font-bold text-center'>Trending Apps</h1>
       <p className='text-center mt-2'>Explore All Trending Apps on the Market developed by us</p>
 
-     <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-10  md:p-0 mt-10 gap-10'>
+     <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-10   md:p-0 mt-10 gap-10'>
       {
-        apps.map(app => <AppsCard key={app.id} app={app}/>)
+        apps.slice( 0 , 10).map(app => <AppsCard key={app.id} app={app}/>)
       }
      </div>
 
      <div className='flex justify-center mt-8'>
-     <button className='btn text-white font-semibold px-10  bg-linear-to-t from-sky-500 to-indigo-500'>Show All</button>
+     <Link
+     onClick={() => window.scrollTo(0,0)}
+      to={'/apps'} 
+       className='btn text-white font-semibold px-10  bg-linear-to-t from-sky-500 to-indigo-500'>
+        Show All</Link>
       </div>      
     </div>
   );
