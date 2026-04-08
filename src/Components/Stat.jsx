@@ -2,7 +2,7 @@ import React from 'react';
 
 const Stat = () => {
   return (
-    <div className='bg-linear-to-t from-sky-500 to-indigo-500 py-10 text-white'>
+    <div className='bg-linear-to-t from-sky-500 to-indigo-500 p-10 text-white'>
 
       <h1 className='text-center text-4xl  font-bold'>Trusted by Millions, Built for You</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 container mx-auto ">
