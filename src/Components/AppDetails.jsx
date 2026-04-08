@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import Download from '../assets/icon-downloads.png'
 import Rating from '../assets/icon-ratings.png'
 import Reviews from '../assets/icon-review.png'
 import { BarChart, Bar, ResponsiveContainer } from 'recharts';
 import { XAxis, YAxis, Tooltip } from 'recharts';
+import { InstallContext } from '../Context/AppContext';
+
+
 
 
 
 const AppDetails = () => {
   const data = useLoaderData()
   const { id } = useParams()
+
+  const { handelInstall } = useContext(InstallContext)
+
 
   const apps = data.find(appid => Number(id) === appid.id)
 
@@ -56,7 +62,7 @@ const AppDetails = () => {
               </div>
             </div>
 
-            <button className='btn btn-success mt-3 text-white font-semibold'>Install Now ({size}MB)</button>
+            <button onClick={() => handelInstall(apps)} className='btn btn-success mt-3 text-white font-semibold'>Install Now ({size}MB)</button>
 
           </div>
 
