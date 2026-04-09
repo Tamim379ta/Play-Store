@@ -1,16 +1,58 @@
-# React + Vite
+## 🚀 HERO.IO – Play Store Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Description
 
-Currently, two official plugins are available:
+HERO.IO is a modern Play Store-inspired web application where users can explore apps, view detailed insights, and manage installations. It simulates a real app marketplace experience with clean UI, routing, and interactive data visualization.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+1. 🏠 Homepage Preview
+ 
+    Displays a selection of apps on the front page
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3. 📱 Apps Page
+   
+   “Show All” button to explore all available apps
 
-## Expanding the ESLint configuration
+   Accessible via navbar
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. 🔍 App Details Page
+   
+    Detailed information about each app
+
+   Integrated charts using Recharts for data visualization
+
+4. ⬇️ Install System
+   
+   Install apps with a single click
+
+   Dynamic state management
+
+5. 📦 Installation Page
+   
+   View all installed apps
+
+   Option to uninstall apps
+
+6. 🔄 Routing System
+   
+   Smooth navigation using modern React routing
+
+## 🛠️ Technologies Used
+
+⚛️ React
+
+🟨 JavaScript (ES6+)
+
+🌐 React Router
+
+🎨 Tailwind CSS
+
+📊 Recharts
+
+🧠 Context API (State Management)
+
+## 🔗 Live Demo
+
+👉 Add your live link here
+[Live link](https://playstoredemo55.netlify.app/)
